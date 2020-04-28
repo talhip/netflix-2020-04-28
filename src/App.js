@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import logo from "./assets/img/logo.png";
+import Section from "./components/Section";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <img className="logo" alt="logo" src={logo} />
+      <Section className="Emissions TV" num="0" />
+      <Section className="Séries françaises" num="1" />
+      <Section className="Comédies" num="2" />
+      <Section className="Nouveautés" num="3" />
+      <Section className="Documentaires" num="4" />
+      <Section className="Séries US" num="5" />
+    </>
   );
 }
 
